@@ -1,0 +1,78 @@
+# AI Waifu Project Dependencies# Core dependencies for AI Waifu project
+
+# Core ML/AI Libraries# Cross-platform compatible versions
+
+torch>=2.0.0
+
+torchvision>=0.15.0# Machine Learning & AI (CPU-only versions first, GPU will be detected and installed separately)
+
+torchaudio>=2.0.0torch>=2.0.0
+
+transformers>=4.30.0torchvision>=0.15.0
+
+datasets>=2.10.0torchaudio>=2.0.0
+
+accelerate>=0.20.0transformers>=4.30.0
+
+diffusers>=0.20.0
+
+# Computer Visionaccelerate>=0.20.0
+
+opencv-python>=4.7.0
+
+Pillow>=9.5.0# Computer Vision
+
+opencv-python>=4.8.0
+
+# Web InterfacePillow>=10.0.0
+
+gradio>=3.35.0
+
+streamlit>=1.25.0# Audio Processing
+
+librosa>=0.10.0
+
+# Data Processingsoundfile>=0.12.0
+
+numpy>=1.24.0
+
+pandas>=2.0.0# Web Framework
+
+scipy>=1.10.0gradio>=3.40.0
+
+flask>=2.3.0
+
+# Utilities
+
+requests>=2.30.0# Data Processing
+
+tqdm>=4.65.0numpy>=1.24.0
+
+pyyaml>=6.0pandas>=2.0.0
+
+python-dotenv>=1.0.0matplotlib>=3.7.0
+
+seaborn>=0.12.0
+
+# Development Tools
+
+jupyter>=1.0.0# Utilities
+
+matplotlib>=3.7.0requests>=2.31.0
+
+seaborn>=0.12.0python-dotenv>=1.0.0
+
+tqdm>=4.65.0
+
+# Optional GPU packages (installed automatically by install.py)pathlib2>=2.3.7
+
+# nvidia-ml-py3  # For NVIDIA GPU monitoringpsutil>=5.9.0
+
+# psutil         # For system monitoring
+# Development tools
+jupyter>=1.0.0
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Platform-specific dependencies will be handled by setup script
