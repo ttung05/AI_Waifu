@@ -1,0 +1,27 @@
+# AI Waifu Configuration
+# Single unified config file
+
+# Model settings
+model:
+  name: "ai_waifu"
+  max_length: 1000
+  temperature: 0.7
+  device: "auto"  # auto, cuda, mps, cpu
+
+# Web interface
+web:
+  host: "0.0.0.0"
+  port: 7860
+  share: false
+
+# Logging
+logging:
+  level: "INFO"
+  save_logs: true
+  log_dir: "./logs"
+
+# Performance (GPU optimization)
+gpu:
+  enabled: true
+  mixed_precision: false  # Set to true for RTX GPUs
+  batch_size: 1

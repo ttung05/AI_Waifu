@@ -1,43 +1,115 @@
-# AI Waifu Project Dependencies# Core dependencies for AI Waifu project
+# AI Waifu Requirements# AI Waifu Requirements# AI Waifu Project Dependencies# Core dependencies for AI Waifu project
 
-# Core ML/AI Libraries# Cross-platform compatible versions
+# Core dependencies for CLI chatbot
+
+# Core Dependencies - Always Required
+
+# Core Libraries
+
+numpy>=1.21.0numpy>=1.21.0# Core ML/AI Libraries# Cross-platform compatible versions
+
+scipy>=1.7.0
+
+pandas>=1.3.0scipy>=1.7.0
+
+matplotlib>=3.4.0
+
+pillow>=8.3.0pandas>=1.3.0torch>=2.0.0
+
+requests>=2.25.0
+
+tqdm>=4.62.0matplotlib>=3.4.0
+
+
+
+# PyTorch (will be installed with correct CUDA version by installer)pillow>=8.3.0torchvision>=0.15.0# Machine Learning & AI (CPU-only versions first, GPU will be detected and installed separately)
 
 torch>=2.0.0
 
-torchvision>=0.15.0# Machine Learning & AI (CPU-only versions first, GPU will be detected and installed separately)
+torchvision>=0.15.0requests>=2.25.0
 
-torchaudio>=2.0.0torch>=2.0.0
+torchaudio>=2.0.0
 
-transformers>=4.30.0torchvision>=0.15.0
+tqdm>=4.62.0torchaudio>=2.0.0torch>=2.0.0
 
-datasets>=2.10.0torchaudio>=2.0.0
+# AI/ML Core
 
-accelerate>=0.20.0transformers>=4.30.0
+transformers>=4.30.0
 
-diffusers>=0.20.0
+datasets>=2.10.0
 
-# Computer Visionaccelerate>=0.20.0
+tokenizers>=0.13.0# AI/ML Coretransformers>=4.30.0torchvision>=0.15.0
 
-opencv-python>=4.7.0
+accelerate>=0.20.0
 
-Pillow>=9.5.0# Computer Vision
+scikit-learn>=1.0.0transformers>=4.30.0
 
-opencv-python>=4.8.0
+huggingface-hub>=0.14.0
 
-# Web InterfacePillow>=10.0.0
+datasets>=2.10.0datasets>=2.10.0torchaudio>=2.0.0
+
+# System Monitoring
+
+psutil>=5.8.0tokenizers>=0.13.0
+
+GPUtil>=1.4.0
+
+pynvml>=11.0.0accelerate>=0.20.0accelerate>=0.20.0transformers>=4.30.0
+
+
+
+# Utilitiesscikit-learn>=1.0.0
+
+pyyaml>=5.4.0
+
+python-dotenv>=0.19.0huggingface-hub>=0.15.0diffusers>=0.20.0
+
+
+
+
+# Web Interface# Computer Visionaccelerate>=0.20.0
+
+gradio>=4.0.0
+
+fastapi>=0.95.0opencv-python>=4.7.0
+
+uvicorn>=0.20.0
+
+websockets>=11.0.0Pillow>=9.5.0# Computer Vision
+
+
+
+# System Monitoringopencv-python>=4.8.0
+
+psutil>=5.8.0
+
+GPUtil>=1.4.0# Web InterfacePillow>=10.0.0
+
+pynvml>=11.4.0
 
 gradio>=3.35.0
 
-streamlit>=1.25.0# Audio Processing
+# PyTorch - CPU version (default)
 
-librosa>=0.10.0
+# For GPU versions, use install_dependencies.py which auto-detects your systemstreamlit>=1.25.0# Audio Processing
+
+torch>=2.0.0
+
+torchvision>=0.15.0librosa>=0.10.0
+
+torchaudio>=2.0.0
 
 # Data Processingsoundfile>=0.12.0
 
-numpy>=1.24.0
+# Optional GPU packages (install via install_dependencies.py for auto-detection)
 
-pandas>=2.0.0# Web Framework
+# cupy-cuda12x  # NVIDIA CUDAnumpy>=1.24.0
 
+# numba[cuda]   # NVIDIA CUDA acceleration
+
+# tensorflow[and-cuda]  # TensorFlow with CUDApandas>=2.0.0# Web Framework
+
+# tensorflow-metal  # TensorFlow Metal (macOS Apple Silicon)
 scipy>=1.10.0gradio>=3.40.0
 
 flask>=2.3.0

@@ -1,13 +1,16 @@
 # AI Waifu Project - Optimized .gitignore
 
 # Temporary files and reports
-*.json
 *_results.json
 *_analysis.json
 *_report.json
 gpu_*.json
-system_*.json
-test_*.json
+system_info.json
+installation_report.json
+setup_report.json
+
+# Keep config files
+!configs/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
