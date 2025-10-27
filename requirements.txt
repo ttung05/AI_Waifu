@@ -1,38 +1,74 @@
-# AI Waifu Requirements# AI Waifu Requirements# AI Waifu Project Dependencies# Core dependencies for AI Waifu project
+# AI Waifu Project Dependencies# AI Waifu Requirements# AI Waifu Requirements# AI Waifu Project Dependencies# Core dependencies for AI Waifu project
 
-# Core dependencies for CLI chatbot
+# Core packages for AI/ML development
 
-# Core Dependencies - Always Required
+# PyTorch will be installed automatically by install.py based on GPU detection# Core dependencies for CLI chatbot
 
-# Core Libraries
 
-numpy>=1.21.0numpy>=1.21.0# Core ML/AI Libraries# Cross-platform compatible versions
+
+# Core Scientific Libraries# Core Dependencies - Always Required
+
+numpy>=1.24.0
+
+scipy>=1.10.0# Core Libraries
+
+pandas>=2.0.0
+
+matplotlib>=3.7.0numpy>=1.21.0numpy>=1.21.0# Core ML/AI Libraries# Cross-platform compatible versions
+
+pillow>=10.0.0
 
 scipy>=1.7.0
 
-pandas>=1.3.0scipy>=1.7.0
+# Machine Learning & AI
 
-matplotlib>=3.4.0
+transformers>=4.30.0pandas>=1.3.0scipy>=1.7.0
 
-pillow>=8.3.0pandas>=1.3.0torch>=2.0.0
+datasets>=2.10.0
+
+tokenizers>=0.13.0matplotlib>=3.4.0
+
+accelerate>=0.20.0
+
+scikit-learn>=1.0.0pillow>=8.3.0pandas>=1.3.0torch>=2.0.0
+
+huggingface-hub>=0.15.0
 
 requests>=2.25.0
 
-tqdm>=4.62.0matplotlib>=3.4.0
+# System Monitoring (required for GPU detection)
+
+psutil>=5.9.0tqdm>=4.62.0matplotlib>=3.4.0
+
+GPUtil>=1.4.0
 
 
 
-# PyTorch (will be installed with correct CUDA version by installer)pillow>=8.3.0torchvision>=0.15.0# Machine Learning & AI (CPU-only versions first, GPU will be detected and installed separately)
+# Utilities
 
-torch>=2.0.0
+requests>=2.31.0# PyTorch (will be installed with correct CUDA version by installer)pillow>=8.3.0torchvision>=0.15.0# Machine Learning & AI (CPU-only versions first, GPU will be detected and installed separately)
+
+tqdm>=4.65.0
+
+pyyaml>=6.0torch>=2.0.0
+
+python-dotenv>=1.0.0
 
 torchvision>=0.15.0requests>=2.25.0
 
-torchaudio>=2.0.0
+# Development Tools (optional)
+
+jupyter>=1.0.0torchaudio>=2.0.0
+
+pytest>=7.4.0
 
 tqdm>=4.62.0torchaudio>=2.0.0torch>=2.0.0
 
-# AI/ML Core
+# NOTE: PyTorch (torch, torchvision, torchaudio) will be installed
+
+# automatically by install.py with the correct CUDA version for your GPU.# AI/ML Core
+
+# Do not add PyTorch to this file.
 
 transformers>=4.30.0
 
